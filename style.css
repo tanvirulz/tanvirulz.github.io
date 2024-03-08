@@ -1,21 +1,63 @@
-*{
-    font-family: 'Courier New', Courier, monospace;
-}
-
-.banner{
-    line-height: .1em;
-}
-.navbar{
-    width:100%;
-    margin: auto;
-    padding: 35px 0;
+/* CSS for the container */
+.container {
     display: flex;
-    align-content: center;
-    justify-content: space-between;
+    flex-direction: column;
+    align-items: stretch;
+    width: 100%;
+    margin-top: 0px; /* Adjust margin-top to remove space */
 }
 
-.navbar ul li{
-    list-style: none;
-    display: inline-block;
-    margin: 0 20px;
+/* CSS for the nav bar */
+nav {
+    background-color: #333;
+    margin-top: -5px;
+    margin-bottom: 0;
 }
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+nav ul li {
+    float: left;
+}
+
+nav ul li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 20px;
+    text-decoration: none;
+}
+
+nav ul li a:hover {
+    background-color: #111;
+}
+
+/* CSS for the banner */
+.banner img {
+    width: 100%;
+    height: auto;
+}
+
+.image-box {
+    display: flex; /* Use flexbox */
+    align-items: center; /* Center items vertically */
+    border: 1px solid #ccc; /* Border around the image */
+    padding: 10px; /* Padding inside the box */
+    width: 560px; /* Width of the box */
+  }
+  
+  img {
+    flex: 0 0 auto; /* Don't grow, don't shrink, stay auto width */
+    margin-right: 10px; /* Space between image and caption */
+  }
+  
+  .caption {
+    flex: 1; /* Take up remaining space */
+    font-family: 'Courier New', Courier, monospace;
+  }
+  
